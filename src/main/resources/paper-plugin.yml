@@ -1,0 +1,12 @@
+name: EasWorldChangeGuard
+version: ${version}
+main: dev.ariel.easguard.EasWorldChangeGuard
+api-version: '1.21.11'
+author: ariel
+description: Closes EasyArmorStands sessions when players cross world or game mode boundaries.
+dependencies:
+  server:
+    EasyArmorStands:
+      load: AFTER
+      required: true
+      join-classpath: true
